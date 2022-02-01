@@ -1,8 +1,8 @@
-# Bem vindos ao brzl.ca
-Bem vindos ao brzl.ca. Vamos escrever em pt-br nesta pagina.  
+# ✨Bem vindos ao brzl.ca
 **Welcome to brzl.ca**: we have a version in en-ca in [here](readme-en-ca.md).
+Nesta pagina vaamos escrever em pt-br. ✌ 
 
-## Qual a nossa ideia?
+## 👏Qual a nossa ideia?
 
 Queremos ser uma plataforma para unir os brasileiros no Canada. Definitivamente temos muitos:
 - grupos no facebook
@@ -17,6 +17,6 @@ Queremos oferecer uma plataforma acessivel para a comunidade brasileira no Canad
 - Quer saber como funciona para a tirar a carteira de motorista? Vamos listar e deixar um forum para as pessoas de varias provincias comentarem
 - Quer vir para o Canada mas nao sabe qual College escolher? Certamente podemos listar os cursos mais *populares*, *acessiveis* ou *horriveis*.
 
-## Como voce pode participar?
+## 🤳Como voce pode participar?
 - Submeta uma PR
 - Entre em contato via brzl@brzl.ca
