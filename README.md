@@ -1,5 +1,6 @@
-# Welcome to brzl.ca
-Bem vindos ao brzl.ca. Vamos escrever em pt-br neste link [aqui](readme-pt-br.md). O resto desta pagina sera em ingles.
+# Bem vindos ao brzl.ca
+Bem vindos ao brzl.ca. Vamos escrever em pt-br nesta pagina.  
+**Welcome to brzl.ca**: we have a version in en-ca in [here](readme-en-ca.md).
 
 ## Qual a nossa ideia?
 
