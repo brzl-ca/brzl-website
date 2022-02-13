@@ -1,6 +1,6 @@
 # ✨Bem vindos ao brzl.ca
 **Welcome to brzl.ca**: we have a version in en-ca in [here](readme-en-ca.md).
-Nesta pagina vaamos escrever em pt-br. ✌ 
+Nesta pagina vamos escrever em pt-br. ✌ 
 
 ## 👏Qual a nossa ideia?
 
