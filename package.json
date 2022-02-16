@@ -1,0 +1,25 @@
+{
+  "name": "brzl-website",
+  "version": "1.0.0",
+  "description": "**Welcome to brzl.ca**: we have a version in en-ca in [here](readme-en-ca.md).\r Nesta pagina vamos escrever em pt-br. ✌",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/w-b-dev/brzl-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/w-b-dev/brzl-website/issues"
+  },
+  "homepage": "https://github.com/w-b-dev/brzl-website#readme",
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "prettier": "^2.5.1"
+  }
+}
