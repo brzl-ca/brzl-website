@@ -64,13 +64,20 @@
         rgba(26, 33, 64, 0.5) 10.9%,
         rgba(81, 84, 115, 0.5) 87.1%
       );
-      /*box-shadow: 0 0 4px 0 #f5f5f54d;*/
+    }
+    @media screen and (max-width: 640px) {
+      body {
+        font-size: 16px;
+      }
+      a {
+        padding: 4px;
+      }
     }
   </style>
   <body>
     <main class="container">
       <div class="row">
-        <div class="col-md-6 painel-chamativo mb-5 px-5 py-3">
+        <div class="col-md-6 painel-chamativo mb-5 px-sm-5 py-3">
           <h1 class="text-danger">👋🏽 Oi, eu sou o Daniel.</h1>
           <p class="text-info">
             Aqui compartilho algumas ideias e aprendizados.
