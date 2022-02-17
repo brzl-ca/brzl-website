@@ -7,24 +7,96 @@
     <!-- Latest compiled and minified CSS -->
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
     <title>BRZL</title>
   </head>
-
+  <style>
+    * {
+      transition-delay: 0ms;
+      transition-duration: 100ms;
+      transition-property: all;
+      transition-timing-function: ease-in-out;
+    }
+    body {
+      background-color: #20192fff;
+      color: ghostwhite;
+      font-size: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    a {
+      font-weight: bold;
+      text-effect: engrave;
+      font-family: monospace;
+      text-transform: uppercase;
+      display: block;
+      color: black;
+      border-left: 20px solid rgba(220, 20, 60, 0.4);
+      padding: 1rem;
+      /*border-radius: 1rem;*/
+      margin-bottom: 1rem;
+      background-color: rgba(220, 20, 60, 0.2);
+      box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.75);
+    }
+    a:hover,
+    a:active,
+    a:focus,
+    a::selection {
+      color: navajowhite;
+      border-left: 20px solid rgba(220, 20, 60, 0.8);
+      background-color: black;
+      text-shadow: 0 0 5px red;
+    }
+    .painel-chamativo {
+      background-image: linear-gradient(
+        94.3deg,
+        rgba(26, 33, 64, 0.5) 10.9%,
+        rgba(81, 84, 115, 0.5) 87.1%
+      );
+      /*box-shadow: 0 0 4px 0 #f5f5f54d;*/
+    }
+  </style>
   <body>
     <main class="container">
       <div class="row">
-        <div class="col-md-6">
-          <h1>Oi! Sou o Daniel.</h1>
-          <p>
-            Desenvolvo aplicativos e web sites para empresas na America do
-            Norte.
+        <div class="col-md-6 painel-chamativo mb-5 px-5 py-3">
+          <h1 class="text-danger">👋🏽 Oi, eu sou o Daniel.</h1>
+          <p class="text-info">
+            Aqui compartilho algumas ideias e aprendizados.
           </p>
-          <p>Aqui compartilho algumas ideias que tenho.</p>
-          <quote>Seja bem vindo.</quote>
+          <cite class="text-success">Seja bem-vindo!</cite>
+          <section class="pt-4">
+            <a
+              href="https://hsm.stackexchange.com/questions/12684/how-did-people-make-things-perfectly-straight"
+              target="_blank"
+            >
+              🧠 "Perfection is reserved for abstractions. Real 'things' respect
+              tolerances" </a
+            ><a
+              href="https://www.linkedin.com/feed/update/urn:li:activity:6750890385310146561?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A6750890385310146561%29&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_featured_details%3Bo43JO7eLSmmyb3HNaykU%2BQ%3D%3D"
+              target="_blank"
+            >
+              🐱‍🏍 An important reminder about speaking your mind and
+              contributing in general
+            </a>
+            <a
+              href="https://www.linkedin.com/posts/brasileiro_diversity-success-devlife-activity-6863835147297521664-4kcI"
+              target="_blank"
+            >
+              Which of these questions would you pick to ask your interviewer
+              next time? </a
+            ><a
+              href="https://www.linkedin.com/groups/12626421/"
+              target="_blank"
+            >
+              👏 New Brunswick JavaScript meetup
+            </a>
+          </section>
         </div>
         <div class="col-md-6">
           <a
@@ -52,6 +124,31 @@
             target="_blank"
           >
             [KCD] React + ️Typescript best practices</a
+          >
+          <hr class="dropdown-divider" />
+          <!--DIVISAO-->
+          <a
+            href="https://www.robinwieruch.de/react-hooks-fetch-data"
+            target="_blank"
+          >
+            An extensive guide on how to fetch data with Hooks</a
+          ><a
+            href="https://nextjs.org/blog/incremental-adoption"
+            target="_blank"
+          >
+            [nextjs] How to start incrementally</a
+          ><a href="https://nodejs.org/dist/latest/docs/api/" target="_blank">
+            🌿[Node] Official docs</a
+          ><a
+            href="https://docs.microsoft.com/en-us/azure/cosmos-db/create-cassandra-nodejs"
+            target="_blank"
+          >
+            [Azure] Cassandra with Node</a
+          ><a
+            href="https://epicreact.dev/one-react-mistake-thats-slowing-you-down"
+            target="_blank"
+          >
+            ✅[KCD] Composition with React</a
           >
         </div>
       </div>
