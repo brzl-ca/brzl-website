@@ -5,29 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Latest compiled and minified CSS -->
-    <link
-      rel="preload"
-      as="style"
-      onload="this.onload=null;this.rel='stylesheet'"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
     <title>BRZL</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <style>
     * {
       transition-delay: 0ms;
-      transition-duration: 100ms;
+      transition-duration: 300ms;
       transition-property: all;
       transition-timing-function: ease-in-out;
+      /*reset*/
+      color: white;
+      font-family: "Roboto", sans-serif;
     }
     body {
       background-color: #20192fff;
+      background-image: linear-gradient(
+        94.3deg,
+        rgba(26, 33, 64, 1) 10.9%,
+        rgba(81, 84, 115, 1) 87.1%
+      );
       color: ghostwhite;
       font-size: 20px;
       display: flex;
@@ -36,137 +42,160 @@
       min-height: 100vh;
     }
     a {
-      font-weight: bold;
-      text-effect: engrave;
-      font-family: monospace;
-      text-transform: uppercase;
+      text-decoration-style: solid;
+      text-decoration-color: #222;
+      text-decoration-line: underline;
+      text-decoration-thickness: 3px;
       display: block;
-      color: black;
-      border-left: 20px solid rgba(220, 20, 60, 0.4);
-      padding: 1rem;
-      /*border-radius: 1rem;*/
-      margin-bottom: 1rem;
-      background-color: rgba(220, 20, 60, 0.2);
-      box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.75);
+      margin-bottom: 0.5em;
+      line-height: 2em;
+    }
+    a::after {
+      content: "🛒";
     }
     a:hover,
     a:active,
     a:focus,
     a::selection {
-      color: navajowhite;
-      border-left: 20px solid rgba(220, 20, 60, 0.8);
-      background-color: black;
-      text-shadow: 0 0 5px red;
+      text-decoration-color: #ff69b498;
+      text-decoration-style: double;
     }
-    .painel-chamativo {
-      background-image: linear-gradient(
-        94.3deg,
-        rgba(26, 33, 64, 0.5) 10.9%,
-        rgba(81, 84, 115, 0.5) 87.1%
-      );
+    .pessoal {
+      max-width: 50vw;
+      margin: auto;
     }
+    .pessoal > a {
+      font-size: 1.15rem;
+    }
+    section {
+      padding: 1rem;
+      border: 10px dashed black;
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-shadow: 0 0 2px crimson;
+      height: 100vh;
+      max-width: 20vw;
+      padding: 0 1rem 1rem;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+
     @media screen and (max-width: 640px) {
       body {
+        flex-direction: column;
         font-size: 16px;
+        padding: 1rem;
       }
-      a {
-        padding: 4px;
+      header {
+        height: unset;
+        position: unset;
+        max-width: unset;
+        padding: unset;
+      }
+      main {
+        display: flex;
+        flex-direction: column;
+      }
+      .pessoal {
+        max-width: 95vw;
       }
     }
   </style>
   <body>
-    <main class="container">
-      <div class="row">
-        <div class="col-md-6 painel-chamativo mb-5 px-sm-5 py-3">
-          <h1 class="text-danger">👋🏽 Oi, eu sou o Daniel.</h1>
-          <p class="text-info">
-            Aqui compartilho algumas ideias e aprendizados.
-          </p>
-          <cite class="text-success">Seja bem-vindo!</cite>
-          <section class="pt-4">
-            <a
-              href="https://hsm.stackexchange.com/questions/12684/how-did-people-make-things-perfectly-straight"
-              target="_blank"
-            >
-              🧠 "Perfection is reserved for abstractions. Real 'things' respect
-              tolerances" </a
-            ><a
-              href="https://www.linkedin.com/feed/update/urn:li:activity:6750890385310146561?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A6750890385310146561%29&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_featured_details%3Bo43JO7eLSmmyb3HNaykU%2BQ%3D%3D"
-              target="_blank"
-            >
-              🐱‍🏍 An important reminder about speaking your mind and
-              contributing in general
-            </a>
-            <a
-              href="https://www.linkedin.com/posts/brasileiro_diversity-success-devlife-activity-6863835147297521664-4kcI"
-              target="_blank"
-            >
-              Which of these questions would you pick to ask your interviewer
-              next time? </a
-            ><a
-              href="https://www.linkedin.com/groups/12626421/"
-              target="_blank"
-            >
-              👏 New Brunswick JavaScript meetup
-            </a>
-          </section>
-        </div>
-        <div class="col-md-6">
+    <header>
+      <h1 class="text-danger">👋🏽 Oi! Seja bem-vindo!</h1>
+      <p>Aqui compartilho algumas ideias e aprendizados.</p>
+    </header>
+    <main>
+      <h2>Thoughts</h2>
+      <section>
+        <div class="pessoal">
           <a
-            href="https://stackoverflow.com/questions/31649267/how-to-kill-a-nodejs-process-in-linux"
+            href="https://hsm.stackexchange.com/questions/12684/how-did-people-make-things-perfectly-straight"
             target="_blank"
           >
-            sudo pkill -f node </a
+            🧠 "Perfection is reserved for abstractions. Real 'things' respect
+            tolerances" </a
           ><a
-            href="https://twitter.com/iamakulov/status/1385230664648253443"
+            href="https://www.linkedin.com/feed/update/urn:li:activity:6750890385310146561?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A6750890385310146561%29&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_featured_details%3Bo43JO7eLSmmyb3HNaykU%2BQ%3D%3D"
             target="_blank"
           >
-            [twitter] Memo and Context issues</a
-          ><a
-            href="https://overreacted.io/a-complete-guide-to-useeffect/#tldr"
-            target="_blank"
-          >
-            [overreacted] useEffect as a pro</a
-          ><a
-            href="https://kentcdodds.com/blog/use-state-lazy-initialization-and-function-updates"
-            target="_blank"
-          >
-            [KCD] useState Lazy Initialization</a
-          ><a
-            href="https://kentcdodds.com/blog/how-to-write-a-react-component-in-typescript"
-            target="_blank"
-          >
-            [KCD] React + ️Typescript best practices</a
-          >
-          <hr class="dropdown-divider" />
-          <!--DIVISAO-->
+            🐱‍🏍 An important reminder about speaking your mind and contributing
+            in general
+          </a>
           <a
-            href="https://www.robinwieruch.de/react-hooks-fetch-data"
+            href="https://www.linkedin.com/posts/brasileiro_diversity-success-devlife-activity-6863835147297521664-4kcI"
             target="_blank"
           >
-            An extensive guide on how to fetch data with Hooks</a
-          ><a
-            href="https://nextjs.org/blog/incremental-adoption"
-            target="_blank"
-          >
-            [nextjs] How to start incrementally</a
-          ><a href="https://nodejs.org/dist/latest/docs/api/" target="_blank">
-            🌿[Node] Official docs</a
-          ><a
-            href="https://docs.microsoft.com/en-us/azure/cosmos-db/create-cassandra-nodejs"
-            target="_blank"
-          >
-            [Azure] Cassandra with Node</a
-          ><a
-            href="https://epicreact.dev/one-react-mistake-thats-slowing-you-down"
-            target="_blank"
-          >
-            ✅[KCD] Composition with React</a
-          >
+            Which of these questions would you pick to ask your interviewer next
+            time? </a
+          ><a href="https://www.linkedin.com/groups/12626421/" target="_blank">
+            👏 New Brunswick JavaScript meetup
+          </a>
         </div>
-      </div>
+      </section>
+      <h2>Some of my favorite links</h2>
+      <section id="favorite-links">
+        <a
+          href="https://stackoverflow.com/questions/31649267/how-to-kill-a-nodejs-process-in-linux"
+          target="_blank"
+        >
+          sudo pkill -f node </a
+        ><a
+          href="https://twitter.com/iamakulov/status/1385230664648253443"
+          target="_blank"
+        >
+          [twitter] Memo and Context issues</a
+        ><a
+          href="https://overreacted.io/a-complete-guide-to-useeffect/#tldr"
+          target="_blank"
+        >
+          [overreacted] useEffect as a pro</a
+        ><a
+          href="https://kentcdodds.com/blog/use-state-lazy-initialization-and-function-updates"
+          target="_blank"
+        >
+          [KCD] useState Lazy Initialization</a
+        ><a
+          href="https://kentcdodds.com/blog/how-to-write-a-react-component-in-typescript"
+          target="_blank"
+        >
+          [KCD] React + ️Typescript best practices</a
+        >
+        <a
+          href="https://www.robinwieruch.de/react-hooks-fetch-data"
+          target="_blank"
+        >
+          An extensive guide on how to fetch data with Hooks</a
+        ><a href="https://nextjs.org/blog/incremental-adoption" target="_blank">
+          [nextjs] How to start incrementally</a
+        ><a href="https://nodejs.org/dist/latest/docs/api/" target="_blank">
+          🌿[Node] Official docs</a
+        ><a
+          href="https://docs.microsoft.com/en-us/azure/cosmos-db/create-cassandra-nodejs"
+          target="_blank"
+        >
+          [Azure] Cassandra with Node</a
+        ><a
+          href="https://epicreact.dev/one-react-mistake-thats-slowing-you-down"
+          target="_blank"
+        >
+          ✅[KCD] Composition with React</a
+        >
+      </section>
     </main>
     <script>
+      const favoriteLinks = document.getElementById("favorite-links").children;
+      let count = 0;
+      for (let favoriteLink of favoriteLinks) {
+        favoriteLink.innerHTML = ++count + ": " + favoriteLink.innerHTML;
+      }
       // Check that service workers are supported
       if ("serviceWorker" in navigator) {
         // Use the window load event to keep the page load performant
