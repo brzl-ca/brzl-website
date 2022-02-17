@@ -4,7 +4,7 @@
   "description": "BRZL.ca website",
   "theme_color": "#ff0000",
   "background_color": "#00ffff",
-  "display": "browser",
+  "display": "minimal-ui",
   "orientation": "portrait",
   "scope": "/",
   "start_url": "/",
