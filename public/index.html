@@ -1,67 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- Latest compiled and minified CSS -->
-  <title>BRZL</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-  <link rel="manifest" href="/site.webmanifest" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
-    rel="stylesheet"
-  />
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-          integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-          crossOrigin="anonymous"></script>
-</head>
-<style>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Latest compiled and minified CSS -->
+    <title>BRZL</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <style>
     * {
-        /*reset*/
-        color: black;
-        box-sizing: border-box;
-        font-family: "Roboto", sans-serif;
+      /*reset*/
+      color: black;
+      box-sizing: border-box;
+      font-family: "Roboto", sans-serif;
     }
 
     body {
-        /*background-color: #20192fff;*/
-        /*background-image: linear-gradient(*/
-        /*  94.3deg,*/
-        /*  rgba(26, 33, 64, 1) 10.9%,*/
-        /*  rgba(81, 84, 115, 1) 87.1%*/
-        /*);*/
-        color: ghostwhite;
-        /*font-size: 20px;*/
-        display: flex;
-        justify-content: center;
-        /*HORIZONTAL AXIS align-items: center;*/
-        /*min-height: 100vh;*/
-        /*width: 100vw;*/
-        padding: 0;
-        margin: 0;
+      /*background-color: #20192fff;*/
+      /*background-image: linear-gradient(*/
+      /*  94.3deg,*/
+      /*  rgba(26, 33, 64, 1) 10.9%,*/
+      /*  rgba(81, 84, 115, 1) 87.1%*/
+      /*);*/
+      color: ghostwhite;
+      /*font-size: 20px;*/
+      display: flex;
+      justify-content: center;
+      /*HORIZONTAL AXIS align-items: center;*/
+      /*min-height: 100vh;*/
+      /*width: 100vw;*/
+      padding: 0;
+      margin: 0;
     }
 
     a {
-        color: ghostwhite;
-        padding: 0.5rem;
-        text-decoration: none;
-        display: inline-block;
-        margin: 0.5em;
-        line-height: 1.5em;
-        /*background-color: #333;*/
-        /*color: white;*/
-        /*background-image: linear-gradient(135deg, #3b2667 10%, #bc78ec 100%);*/
-        /*border-radius: 10px;*/
-        border: 2px solid transparent;
-        transition-delay: 0ms;
-        transition-duration: 200ms;
-        transition-property: background-color;
-        transition-timing-function: step-end;
+      color: ghostwhite;
+      padding: 0.5rem;
+      text-decoration: none;
+      display: inline-block;
+      margin: 0.5em;
+      line-height: 1.5em;
+      /*background-color: #333;*/
+      /*color: white;*/
+      /*background-image: linear-gradient(135deg, #3b2667 10%, #bc78ec 100%);*/
+      /*border-radius: 10px;*/
+      border: 2px solid transparent;
+      transition-delay: 0ms;
+      transition-duration: 200ms;
+      transition-property: background-color;
+      transition-timing-function: step-end;
     }
 
     /*a:hover::after {*/
@@ -71,21 +73,21 @@
     a:active,
     a:focus,
     a::selection {
-        /*color: black;*/
-        box-shadow: 0 0 2px black;
-        border: 2px solid white;
+      /*color: black;*/
+      box-shadow: 0 0 2px black;
+      border: 2px solid white;
 
-        /*background-color: #ffffff84;*/
-        /*background-color: rgba(26, 33, 64, 1);*/
-        /*background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);*/
+      /*background-color: #ffffff84;*/
+      /*background-color: rgba(26, 33, 64, 1);*/
+      /*background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);*/
     }
 
     .title-emphasis {
-        /*  padding: 1rem;*/
-        /*background-color: rgba(0,0,0,0.5);*/
-        /*text-shadow: -1px 1px 2px deeppink;*/
-        color: ghostwhite;
-        text-decoration: underline;
+      /*  padding: 1rem;*/
+      /*background-color: rgba(0,0,0,0.5);*/
+      /*text-shadow: -1px 1px 2px deeppink;*/
+      color: ghostwhite;
+      text-decoration: underline;
     }
 
     /*.pessoal > a {*/
@@ -95,188 +97,186 @@
     /*margin: auto;*/
     /*}*/
     img {
-        max-width: 100%;
-        height: auto;
+      max-width: 100%;
+      height: auto;
     }
 
     main {
-        /*width: 50vw;*/
-        padding: 1rem;
-        flex: 1;
-        /*background-image: linear-gradient(135deg, #ff9d6c 10%, #bb4e75 100%);*/
-        background-color: #20192fff;
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.75);
-        clip-path: inset(0 0 0 -15px);
-        background-image: linear-gradient(
-                94.3deg,
-                rgba(20, 20, 20, 1) 40%,
-                rgba(30, 30, 30, 1) 100%
-        );
+      /*width: 50vw;*/
+      padding: 1rem;
+      flex: 1;
+      /*background-image: linear-gradient(135deg, #ff9d6c 10%, #bb4e75 100%);*/
+      background-color: #20192fff;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.75);
+      clip-path: inset(0 0 0 -15px);
+      background-image: linear-gradient(
+        94.3deg,
+        rgba(20, 20, 20, 1) 40%,
+        rgba(30, 30, 30, 1) 100%
+      );
     }
 
     header {
-        background-image: url("burger_optimized.jpg");
-        background-repeat: no-repeat;
-        backdrop-filter: blur(4px);
-        background-position: center;
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        width: 40vw;
-        padding: 0 1rem 1rem;
-        position: sticky;
-        top: 0;
-        left: 0;
-        /*border: 10px solid chocolate;*/
-        background-color: #1d3d78;
-        /*color: white;*/
+      background-image: url("burger_optimized.jpg");
+      background-repeat: no-repeat;
+      backdrop-filter: blur(4px);
+      background-position: center;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 40vw;
+      padding: 0 1rem 1rem;
+      position: sticky;
+      top: 0;
+      left: 0;
+      /*border: 10px solid chocolate;*/
+      background-color: #1d3d78;
+      /*color: white;*/
     }
 
     /*header * {*/
     /*  color: white;*/
     /*}*/
     @media screen and (max-width: 800px) {
-        body {
-            flex-direction: column;
-            font-size: 16px;
-            /*padding: 1rem;*/
-        }
+      body {
+        flex-direction: column;
+        font-size: 16px;
+        /*padding: 1rem;*/
+      }
 
-        img {
-            max-height: 10vh;
-            width: auto;
-        }
+      img {
+        max-height: 10vh;
+        width: auto;
+      }
 
-        header {
-            height: 100vh;
-            width: 100%;
-            /*opacity: 0.5;*/
-        }
+      header {
+        height: 100vh;
+        width: 100%;
+        /*opacity: 0.5;*/
+      }
 
-        main {
-            display: flex;
-            flex-direction: column;
-            /*    override */
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.75);
-            clip-path: inset(-15px 0 0 0);
-            /*box-shadow: 0 0 10px black;*/
-            z-index: 2;
-        }
+      main {
+        display: flex;
+        flex-direction: column;
+        /*    override */
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.75);
+        clip-path: inset(-15px 0 0 0);
+        /*box-shadow: 0 0 10px black;*/
+        z-index: 2;
+      }
 
-        .pessoal {
-            max-width: 95vw;
-        }
+      .pessoal {
+        max-width: 95vw;
+      }
     }
-</style>
-<body>
-<header>
-  <!--      <img src="brzl.png" height="223" width="339" alt="brzl.ca logo" />-->
-  <!--      <h1>👋🏽 Oi!</h1>-->
-  <!--      <p>Aqui compartilho algumas ideias e aprendizados.</p>-->
-</header>
-<main>
-  <h2 class="title-emphasis">Thoughts</h2>
-  <section>
-    <div class="pessoal">
-      <a
-        href="https://hsm.stackexchange.com/questions/12684/how-did-people-make-things-perfectly-straight"
-        target="_blank"
-      >
-        🧠 "Perfection is reserved for abstractions. Real 'things' respect
-        tolerances" </a
-      ><a
-      href="https://www.linkedin.com/feed/update/urn:li:activity:6750890385310146561?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A6750890385310146561%29&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_featured_details%3Bo43JO7eLSmmyb3HNaykU%2BQ%3D%3D"
-      target="_blank"
-    >
-      🐱‍🏍 An important reminder about speaking your mind and contributing
-      in general
-    </a>
-      <a
-        href="https://www.linkedin.com/posts/brasileiro_diversity-success-devlife-activity-6863835147297521664-4kcI"
-        target="_blank"
-      >
-        Which of these questions would you pick to ask your interviewer next
-        time? </a
-      ><a href="https://www.linkedin.com/groups/12626421/" target="_blank">
-      👏 New Brunswick JavaScript meetup
-    </a>
-    </div>
-  </section>
-  <h2 class="title-emphasis">Some of my favorite links</h2>
-  <section id="favorite-links">
-    <a
-      href="https://stackoverflow.com/questions/31649267/how-to-kill-a-nodejs-process-in-linux"
-      target="_blank"
-    >
-      sudo pkill -f node </a
-    ><a
-    href="https://twitter.com/iamakulov/status/1385230664648253443"
-    target="_blank"
-  >
-    [twitter] Memo and Context issues</a
-  ><a
-    href="https://overreacted.io/a-complete-guide-to-useeffect/#tldr"
-    target="_blank"
-  >
-    [overreacted] useEffect as a pro</a
-  ><a
-    href="https://kentcdodds.com/blog/use-state-lazy-initialization-and-function-updates"
-    target="_blank"
-  >
-    [KCD] useState Lazy Initialization</a
-  ><a
-    href="https://kentcdodds.com/blog/how-to-write-a-react-component-in-typescript"
-    target="_blank"
-  >
-    [KCD] React + ️Typescript best practices</a
-  >
-    <a
-      href="https://www.robinwieruch.de/react-hooks-fetch-data"
-      target="_blank"
-    >
-      An extensive guide on how to fetch data with Hooks</a
-    ><a href="https://nextjs.org/blog/incremental-adoption" target="_blank">
-    [nextjs] How to start incrementally</a
-  ><a href="https://nodejs.org/dist/latest/docs/api/" target="_blank">
-    🌿[Node] Official docs</a
-  ><a
-    href="https://docs.microsoft.com/en-us/azure/cosmos-db/create-cassandra-nodejs"
-    target="_blank"
-  >
-    [Azure] Cassandra with Node</a
-  ><a
-    href="https://epicreact.dev/one-react-mistake-thats-slowing-you-down"
-    target="_blank"
-  >
-    ✅[KCD] Composition with React</a
-  >
-  </section>
-</main>
-<script>
-  <!--
-  jQuery; -->
-  $.ajax({
-    url: 'https://api-staging.w-b.dev',
-    success: function(data) {
-      console.log(data);
-    },
-  });
-  <!--      whatever -->
-  const favoriteLinks = document.getElementById('favorite-links').children;
-  let count = 0;
-  for (let favoriteLink of favoriteLinks) {
-    favoriteLink.innerHTML = ++count + ': ' + favoriteLink.innerHTML;
-  }
-  // Check that service workers are supported
-  if ('serviceWorker' in navigator) {
-    // Use the window load event to keep the page load performant
-    window.addEventListener('load', () => {
-      navigator.serviceWorker.register('/service-worker.js');
-    });
-  }
-</script>
-</body>
+  </style>
+  <body>
+    <header>
+      <!--      <img src="brzl.png" height="223" width="339" alt="brzl.ca logo" />-->
+      <!--      <h1>👋🏽 Oi!</h1>-->
+      <!--      <p>Aqui compartilho algumas ideias e aprendizados.</p>-->
+    </header>
+    <main>
+      <h2 class="title-emphasis">Thoughts</h2>
+      <section>
+        <div class="pessoal">
+          <a
+            href="https://hsm.stackexchange.com/questions/12684/how-did-people-make-things-perfectly-straight"
+            target="_blank"
+          >
+            🧠 "Perfection is reserved for abstractions. Real 'things' respect
+            tolerances" </a
+          ><a
+            href="https://www.linkedin.com/feed/update/urn:li:activity:6750890385310146561?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A6750890385310146561%29&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_featured_details%3Bo43JO7eLSmmyb3HNaykU%2BQ%3D%3D"
+            target="_blank"
+          >
+            🐱‍🏍 An important reminder about speaking your mind and contributing
+            in general
+          </a>
+          <a
+            href="https://www.linkedin.com/posts/brasileiro_diversity-success-devlife-activity-6863835147297521664-4kcI"
+            target="_blank"
+          >
+            Which of these questions would you pick to ask your interviewer next
+            time? </a
+          ><a href="https://www.linkedin.com/groups/12626421/" target="_blank">
+            👏 New Brunswick JavaScript meetup
+          </a>
+        </div>
+      </section>
+      <h2 class="title-emphasis">Some of my favorite links</h2>
+      <section id="favorite-links">
+        <a
+          href="https://stackoverflow.com/questions/31649267/how-to-kill-a-nodejs-process-in-linux"
+          target="_blank"
+        >
+          sudo pkill -f node </a
+        ><a
+          href="https://twitter.com/iamakulov/status/1385230664648253443"
+          target="_blank"
+        >
+          [twitter] Memo and Context issues</a
+        ><a
+          href="https://overreacted.io/a-complete-guide-to-useeffect/#tldr"
+          target="_blank"
+        >
+          [overreacted] useEffect as a pro</a
+        ><a
+          href="https://kentcdodds.com/blog/use-state-lazy-initialization-and-function-updates"
+          target="_blank"
+        >
+          [KCD] useState Lazy Initialization</a
+        ><a
+          href="https://kentcdodds.com/blog/how-to-write-a-react-component-in-typescript"
+          target="_blank"
+        >
+          [KCD] React + ️Typescript best practices</a
+        >
+        <a
+          href="https://www.robinwieruch.de/react-hooks-fetch-data"
+          target="_blank"
+        >
+          An extensive guide on how to fetch data with Hooks</a
+        ><a href="https://nextjs.org/blog/incremental-adoption" target="_blank">
+          [nextjs] How to start incrementally</a
+        ><a href="https://nodejs.org/dist/latest/docs/api/" target="_blank">
+          🌿[Node] Official docs</a
+        ><a
+          href="https://docs.microsoft.com/en-us/azure/cosmos-db/create-cassandra-nodejs"
+          target="_blank"
+        >
+          [Azure] Cassandra with Node</a
+        ><a
+          href="https://epicreact.dev/one-react-mistake-thats-slowing-you-down"
+          target="_blank"
+        >
+          ✅[KCD] Composition with React</a
+        >
+      </section>
+    </main>
+    <script>
+      $.ajax({
+        url: "https://api-staging.w-b.dev",
+        success: function (data) {
+          console.log(data);
+        },
+      });
+      <!--      whatever -->
+      const favoriteLinks = document.getElementById("favorite-links").children;
+      let count = 0;
+      for (let favoriteLink of favoriteLinks) {
+        favoriteLink.innerHTML = ++count + ": " + favoriteLink.innerHTML;
+      }
+      // Check that service workers are supported
+      if ("serviceWorker" in navigator) {
+        // Use the window load event to keep the page load performant
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("/service-worker.js");
+        });
+      }
+    </script>
+  </body>
 </html>
