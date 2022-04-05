@@ -41,7 +41,7 @@ const handleDelete = (input) => {
   console.info("DELETE input", input);
   $.ajax({
     type: "DELETE",
-    url: `https://api-staging.w-b.dev?post_creation_date=${input.post_creation_date}&post_timestamp=${input.post_timestamp}&post_id=${input.post_id}`,
+    url: `https://api.w-b.dev?post_creation_date=${input.post_creation_date}&post_timestamp=${input.post_timestamp}&post_id=${input.post_id}`,
     success: console.log,
     error: console.error,
   });
@@ -55,7 +55,7 @@ const buttonTemplate = (input) => {
 };
 
 $.ajax({
-  url: "https://api-staging.w-b.dev",
+  url: "https://api.w-b.dev",
   success: handleSuccessFetch,
 });
 
