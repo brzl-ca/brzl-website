@@ -1,4 +1,5 @@
 const ROUTES = {
+  PAGINA_NAO_ENCONTRADA: "*",
   PAGINA_INITIAL: "/",
   LOJA: "/loja",
   AGENDA: "/agenda-de-eventos",

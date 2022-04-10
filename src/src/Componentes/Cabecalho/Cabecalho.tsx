@@ -3,10 +3,11 @@ import "./Cabecalho.css";
 import { LinksNavegacao } from "../LinksNavegacao/LinksNavegacao";
 import { Link } from "react-router-dom";
 import ROUTES from "../../Paginas/routes";
+import { isDev } from "../../Paginas/devUtils";
 
 const Cabecalho = () => (
-  <section className="Cabecalho">
-    <h2>Cabecalho</h2>
+  <section className={isDev() ? "Cabecalho" : ""}>
+    {isDev() && <h2>Cabecalho</h2>}
     <LinksNavegacao>
       <Link to={ROUTES.PAGINA_INITIAL}>🏠</Link>
       <Link to={ROUTES.LOJA}>Loja</Link>
