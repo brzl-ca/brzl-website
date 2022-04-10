@@ -14,4 +14,7 @@ body {
 
 .App {
   /*  Entry point */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
