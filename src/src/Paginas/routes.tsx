@@ -7,6 +7,8 @@ const ROUTES = {
   LOGIN: "/tela-de-login",
   BLOG: "/blog",
   CONTATO: "/contato",
+  FORUM: "/forum-discussao",
+  FAQ: "/faq",
   QUEM: "/quem-somos",
 };
 

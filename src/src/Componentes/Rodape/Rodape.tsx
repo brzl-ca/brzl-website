@@ -35,6 +35,18 @@ const Rodape = () => {
         >
           Blog
         </Link>
+        <Link
+          to={ROUTES.FORUM}
+          className={pathname === ROUTES.FORUM ? "pagina-atual" : ""}
+        >
+          Fórum de discussão
+        </Link>
+        <Link
+          to={ROUTES.FAQ}
+          className={pathname === ROUTES.FAQ ? "pagina-atual" : ""}
+        >
+          FAQ
+        </Link>
       </LinksNavegacao>
     </section>
   );

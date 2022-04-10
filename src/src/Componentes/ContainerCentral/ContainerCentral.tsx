@@ -10,7 +10,7 @@ const ContainerCentral = ({ children }: PropsWithChildren<any>) => (
     {/*    {isDev() ? "DESENVOLVIMENTO" : "PRODUÇÃO"})*/}
     {/*  </h2>*/}
     {/*)}*/}
-    <main>{children}</main>
+    {children}
   </div>
 );
 

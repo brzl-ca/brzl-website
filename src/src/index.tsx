@@ -29,6 +29,8 @@ root.render(
           <Route element={<Contato />} path={ROUTES.CONTATO} />
           <Route element={<QuemSomos />} path={ROUTES.QUEM} />
           <Route element={<Login />} path={ROUTES.LOGIN} />
+          <Route element={<Login />} path={ROUTES.FORUM} /> {/*TODO*/}
+          <Route element={<Login />} path={ROUTES.FAQ} /> {/*TODO*/}
           <Route
             element={<PAGINA_NAO_ENCONTRADA />}
             path={ROUTES.PAGINA_NAO_ENCONTRADA}

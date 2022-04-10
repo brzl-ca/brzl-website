@@ -1,0 +1,46 @@
+.Blog {
+  flex: 1;
+  width: 100%;
+  background-color: rgba(255, 215, 0, 0.05);
+}
+.Blog-wrapper {
+  max-width: 1280px;
+  padding: 1rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.titulo {
+  text-align: center;
+}
+
+.intro {
+  max-width: 80%;
+  margin: 0 auto 2rem;
+}
+
+.ListaDeArtigos {
+  flex: 1;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.ArtigoIndividual {
+  width: 45%;
+  margin-bottom: 1em;
+  padding: 1em;
+  border: 1px solid transparent;
+  border-top: 1px solid rgba(51, 51, 51, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.ArtigoIndividual:hover {
+  background-color: rgba(255, 215, 0, 0.5);
+  border: 1px solid rgba(51, 51, 51, 0.5);
+}
