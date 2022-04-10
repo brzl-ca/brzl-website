@@ -1,9 +1,21 @@
+.LinksNavegacao {
+  display: flex;
+  justify-content: space-around;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.LinksNavegacao .pagina-atual {
+  font-weight: 500;
+  border-bottom: 1px solid #333;
+}
+
 .LinksNavegacao a {
   display: inline-block;
-  font-weight: bold;
+  font-size: 0.8em;
   padding: 0.2em 0.8em;
-  color: rgba(220, 20, 60, 0.6);
-  text-transform: uppercase;
+  color: #555;
+  /*text-transform: uppercase;*/
   text-decoration: none;
   margin: 4px;
   border-bottom: 2px solid transparent;
@@ -13,6 +25,6 @@
 .LinksNavegacao a:active,
 .LinksNavegacao a:focus,
 .LinksNavegacao a::selection {
-  color: crimson;
-  border-bottom: 2px solid #333;
+  color: #333;
+  border-bottom: 1px solid #333;
 }
