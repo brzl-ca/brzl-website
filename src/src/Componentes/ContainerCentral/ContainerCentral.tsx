@@ -3,7 +3,7 @@ import "./ContainerCentral.css";
 import { isDev } from "../../Paginas/devUtils";
 
 const ContainerCentral = ({ children }: PropsWithChildren<any>) => (
-  <div className={isDev() ? "ContainerCentral-Dev" : "ContainerCentral"}>
+  <div className={`ContainerCentral ${isDev() ? "ContainerCentral-Dev" : ""}`}>
     {isDev() && (
       <h2>
         ContainerCentral (*

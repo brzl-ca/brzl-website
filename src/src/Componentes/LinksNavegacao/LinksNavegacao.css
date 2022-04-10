@@ -2,18 +2,17 @@
   display: inline-block;
   font-weight: bold;
   padding: 0.2em 0.8em;
-  color: whitesmoke;
+  color: rgba(220, 20, 60, 0.6);
   text-transform: uppercase;
   text-decoration: none;
   margin: 4px;
-  /*background-color: rgba(255, 255, 0, 0.1);*/
+  border-bottom: 2px solid transparent;
 }
 
 .LinksNavegacao a:hover,
 .LinksNavegacao a:active,
 .LinksNavegacao a:focus,
 .LinksNavegacao a::selection {
-  color: deepskyblue;
-  background-color: rgba(0, 0, 0, 0.3);
-  border-bottom: 2px solid white;
+  color: crimson;
+  border-bottom: 2px solid #333;
 }
