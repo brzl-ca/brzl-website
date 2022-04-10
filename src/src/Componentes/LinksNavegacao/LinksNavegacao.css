@@ -1,0 +1,19 @@
+.LinksNavegacao a {
+  display: inline-block;
+  font-weight: bold;
+  padding: 0.2em 0.8em;
+  color: whitesmoke;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 4px;
+  /*background-color: rgba(255, 255, 0, 0.1);*/
+}
+
+.LinksNavegacao a:hover,
+.LinksNavegacao a:active,
+.LinksNavegacao a:focus,
+.LinksNavegacao a::selection {
+  color: deepskyblue;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-bottom: 2px solid white;
+}
