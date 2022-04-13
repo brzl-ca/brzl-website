@@ -29,14 +29,16 @@
 }
 
 .ArtigoIndividual {
+  background-color: whitesmoke;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 45%;
+  width: clamp(300px, 45%, 400px);
   margin-bottom: 1em;
   padding: 2em;
   box-shadow: 0 4px 8px 0 rgba(129, 127, 127, 0.5);
   border: 1px solid transparent;
+  border-radius: 8px;
   /*border: 1px solid rgba(51, 51, 51, 0.5);*/
 }
 
@@ -47,15 +49,16 @@
 }
 .ArtigoIndividual:not(.artigo--favorito) h3 {
   font-size: 1em;
-  text-align: center;
+  /*text-align: center;*/
   font-style: italic;
   /*text-emphasis: sesame dodgerblue;*/
 }
 .artigo--favorito h3 {
-  color: dodgerblue;
+  font-size: 1.15em;
+  color: rgba(51, 51, 51, 0.75);
   font-weight: 500;
   /*background-color: gold;*/
-  padding: 1em;
+  /*padding: 1em;*/
   /*color: rgba(51, 51, 51, 0.85);*/
   border-bottom: 1px dashed rgba(51, 51, 51, 0.75);
 }

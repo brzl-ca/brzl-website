@@ -28,7 +28,7 @@ body {
 
 .image {
   max-width: calc(100% - 2 * 5vw);
-  max-height: 100%;
+  height: auto;
   margin: 5vw;
   border: 1px solid rgba(192, 190, 190, 0.6);
   box-shadow: 0 0 10px 2px rgba(192, 190, 190, 0.5);
