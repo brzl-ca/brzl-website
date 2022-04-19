@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./Blog.css";
-import "dotenv/config";
+import { config } from "dotenv";
+
+config();
 
 interface Artigo {
   post_body: string;
