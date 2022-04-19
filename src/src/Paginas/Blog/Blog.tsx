@@ -92,7 +92,7 @@ const Blog = () => {
   return (
     <section className={"Blog"}>
       <div className={"Blog-wrapper"}>
-        <h1 className={"titulo"}>Blog</h1>
+        <h1 className={"titulo"}>Blog {JSON.stringify(process.env)}</h1>
         <p className={"intro"}>
           Mais realisticamente, essa seção visa agrupar alguns posts e links
           interessantes.
