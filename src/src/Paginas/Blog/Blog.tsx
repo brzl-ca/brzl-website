@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Blog.css";
+import "dotenv/config";
 
 interface Artigo {
   post_body: string;
@@ -47,7 +48,7 @@ const ArtigoIndividual = ({ artigo }: { artigo: Artigo }) => {
 };
 const ListaDeArtigos = () => {
   const [{ data, isLoading, isError }, setUrl] = useDataApi(
-    process.env.API_URL ?? "",
+    process.env.API_URL ?? "https://api.w-b.dev/blog/",
     []
   );
   return (
