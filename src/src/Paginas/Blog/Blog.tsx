@@ -47,7 +47,7 @@ const ArtigoIndividual = ({ artigo }: { artigo: Artigo }) => {
 };
 const ListaDeArtigos = () => {
   const [{ data, isLoading, isError }, setUrl] = useDataApi(
-    "https://api.w-b.dev/blog/",
+    process.env.API_URL,
     []
   );
   return (
