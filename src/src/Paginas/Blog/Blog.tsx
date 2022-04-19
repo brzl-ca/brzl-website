@@ -49,7 +49,8 @@ const ArtigoIndividual = ({ artigo }: { artigo: Artigo }) => {
   );
 };
 const ListaDeArtigos = () => {
-  const [{ data, isLoading, isError }, setUrl] = useDataApi(
+  // const [{ data, isLoading, isError }, setUrl] = useDataApi(
+  const [{ data}] = useDataApi(
     process.env.REACT_APP_API_URL ?? "https://api.w-b.dev/blog/",
     []
   );
@@ -92,7 +93,7 @@ const Blog = () => {
   return (
     <section className={"Blog"}>
       <div className={"Blog-wrapper"}>
-        <h1 className={"titulo"}>Blog {JSON.stringify(process.env)}</h1>
+        <h1 className={"titulo"}>Blog</h1>
         <p className={"intro"}>
           Mais realisticamente, essa seção visa agrupar alguns posts e links
           interessantes.
