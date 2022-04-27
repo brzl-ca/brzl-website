@@ -1,5 +1,6 @@
-import { ArtigoIndividual } from "./ArtigoIndividual";
 import React from "react";
+import "./ListaDeArtigos.css";
+import { ArtigoIndividual } from "./ArtigoIndividual";
 import { useDataApi } from "./UseDataApi";
 
 export const ListaDeArtigos = () => {

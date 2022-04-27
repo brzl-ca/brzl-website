@@ -1,0 +1,83 @@
+/*
+- Root (Base state and pseudo such as Hover etc)
+- First descendants: image and link
+*/
+
+/**************************************************************/
+/* ROOT */
+.ArtigoIndividual {
+  padding: 1em;
+  background-color: white;
+  border: 1px solid rgba(51, 51, 51, 0.25);
+  width: 32em;
+  max-width: 100%;
+  margin: 0 auto 1em;
+  /*all good up to here*/
+  display: flex;
+  align-items: center;
+}
+
+.ArtigoIndividual:hover {
+  background-color: whitesmoke;
+  box-shadow: 0 3px 6px 0 rgba(129, 127, 127, 0.5);
+}
+/* special case for ROOT */
+.favorito {
+  flex-direction: column;
+  border-color: black;
+}
+/**************************************************************/
+/* FIRST-LEVEL DESCENDANT */
+.ArtigoIndividual > img {
+  height: 100px;
+}
+.ArtigoIndividual:not(.favorito) > img {
+  margin-right: 0.5em;
+}
+/**************************************************************/
+/* FIRST-LEVEL DESCENDANT */
+.link-fingindo-ser-bloco {
+  text-decoration: none;
+  width: 100%;
+  min-width: 0;
+  color: inherit;
+}
+/**************************************************************/
+.titulo {
+  line-height: 1.8em;
+  word-break: break-word;
+  overflow: hidden;
+  display: -webkit-box;
+  line-clamp: 3;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.ArtigoIndividual:not(.favorito) .titulo {
+  font-size: 1em;
+}
+/**************************************************************/
+.rodape {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+/**************************************************************/
+.span-fingindo-ser-link {
+  font-style: italic;
+  color: dodgerblue;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.data {
+  font-size: 0.8em;
+}
+
+.categoria {
+  font-size: 0.8em;
+}
+@media screen and (max-width: 800px) {
+  .ArtigoIndividual:not(.favorito) img {
+    display: none;
+  }
+}

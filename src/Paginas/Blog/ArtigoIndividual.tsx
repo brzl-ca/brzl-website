@@ -1,11 +1,12 @@
 import React from "react";
 import { Artigo } from "./Blog";
+import "./ArtigoIndividual.css";
 
 export const ArtigoIndividual = ({ artigo }: { artigo: Artigo }) => {
   return (
     <article
       className={`ArtigoIndividual ${
-        artigo.post_is_favorite ? "artigo--favorito" : ""
+        artigo.post_is_favorite ? "favorito" : ""
       }`}
     >
       <img
@@ -13,22 +14,22 @@ export const ArtigoIndividual = ({ artigo }: { artigo: Artigo }) => {
         alt={artigo.post_image}
       />
       <a
-        className={"artigo--link-fingindo-ser-bloco"}
+        className={"link-fingindo-ser-bloco"}
         href={artigo.post_body}
         target={"_blank"}
         rel="noreferrer"
       >
-        <h3>{artigo.post_title}</h3>
-        <section className={"artigo--rodape"}>
-          <span className={"artigo--span-fingindo-ser-link"}>
+        <h3 className={"titulo"}>{artigo.post_title}</h3>
+        <section className={"rodape"}>
+          <span className={"span-fingindo-ser-link"}>
             {artigo.post_body.slice(8).slice(0, 42)}...
           </span>
-          <span className={"artigo--cabecalho"}>
+          <span className={"data"}>
             {new Date(Date.parse(artigo.post_timestamp)).toLocaleString(
               "pt-br"
             )}
           </span>
-          <span className={"artigo--categoria"}>[{artigo.post_category}]</span>
+          <span className={"categoria"}>[{artigo.post_category}]</span>
         </section>
       </a>
     </article>
