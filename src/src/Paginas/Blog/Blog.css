@@ -1,10 +1,8 @@
 .Blog {
   flex: 1;
   width: 100%;
-  /*background-color: rgba(255, 215, 0, 0.05);*/
 }
 .Blog-wrapper {
-  /*max-width: 1280px;*/
   background-color: ghostwhite;
   padding: 1rem;
   margin: 0 auto;
@@ -30,14 +28,8 @@
 
 .ArtigoIndividual img {
   height: 100px;
-  /*width: auto;*/
-  /*flex: 1;*/
-}
-.ArtigoIndividual.artigo--favorito img {
-  /*margin-bottom: 1em;*/
 }
 .ArtigoIndividual:not(.artigo--favorito) img {
-  /*height: 100px;*/
   margin-right: 0.5em;
 }
 
@@ -46,6 +38,7 @@
   background-color: white;
   border: 1px solid rgba(51, 51, 51, 0.25);
   width: 32em;
+  max-width: 100%;
   margin: 0 auto 1em;
   /*all good up to here*/
   display: flex;
@@ -87,9 +80,6 @@
 }
 .artigo--cabecalho {
   font-size: 0.8em;
-  /*position: absolute;*/
-  /*top: -0.5em;*/
-  /*right: 0;*/
 }
 .artigo--rodape {
   display: flex;
@@ -98,28 +88,25 @@
 }
 .artigo--categoria {
   font-size: 0.8em;
-  /*position: absolute;*/
-  /*bottom: -0.5em;*/
-  /*right: 0;*/
 }
 
 .artigo--link-fingindo-ser-bloco {
-  /*padding: 0 1em;*/
   text-decoration: none;
-  /*display: flex;*/
-  /*justify-content: center;*/
-  /*flex-direction: column;*/
   width: 100%;
   min-width: 0;
   color: inherit;
 }
 
 .artigo--span-fingindo-ser-link {
-  /*color: rgba(51, 51, 51, 0.65);*/
   font-style: italic;
   color: dodgerblue;
-  /*font-weight: 500;*/
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
-.ArtigoIndividual .artigo--span-fingindo-ser-link {
-  /*font-weight: 500;*/
+
+@media screen and (max-width: 800px) {
+  .ArtigoIndividual:not(.artigo--favorito) img {
+    display: none;
+  }
 }
