@@ -40,41 +40,6 @@ const Blog = () => {
               ID - está é uma *clustering column*, que ordena os resultados
             </li>
           </ol>
-          <ul>
-            <li>
-              O partition key define qual o node no cluster vai armazenar o
-              valor.
-            </li>
-            <li>
-              A primary key (óbvio para a maioria) deve ser única para cada
-              linha da tabela.
-            </li>
-            <li>
-              Ela vai definir a ordem dos dados (TODO: entrar mais a fundo
-              aqui).
-            </li>
-            <li>
-              As clustering columns são armazenadas de forma ordenada e aninhada
-              (nested) uma dentro da outra.
-            </li>
-            <li>
-              (TODO: colocar exemplos) Não se pode colocar uma cláusula de
-              filtro ("where") usando uma clustering column aninhada, sem
-              referenciar as anteriores. Daí a menção que a ordem das colunas é
-              importante na tabela.
-            </li>
-          </ul>
-          <ul>
-            Quais as consultas que temos mais interesse?
-            <li>
-              Vamos analisar quais estão conformes de acordo com as sugestões de
-            </li>
-            <li>(cada 1 query deve) pegar dados de 1 partição somente</li>
-            <li>
-              evitar os "full table scans" (buscas através de TODAS as
-              partições)
-            </li>
-          </ul>
           <ol>
             <li>NÃO -- [todos os] Posts em ordem data decrescente</li>
             <li>NÃO -- Posts [de data X até Y] em ordem data decrescente </li>
