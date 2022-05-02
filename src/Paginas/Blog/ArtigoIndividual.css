@@ -6,8 +6,10 @@
 /**************************************************************/
 /* ROOT */
 .ArtigoIndividual {
+  position: relative;
+  overflow: hidden;
   padding: 1em;
-  background-color: white;
+  background-color: transparent;
   border: 1px solid rgba(51, 51, 51, 0.25);
   width: 32em;
   max-width: 100%;
@@ -15,24 +17,37 @@
   /*all good up to here*/
   display: flex;
   align-items: center;
+  box-shadow: 0 4px 7px 0 rgba(129, 127, 127, 0.25);
 }
 
 .ArtigoIndividual:hover {
-  background-color: whitesmoke;
+  /*background-color: whitesmoke;*/
   box-shadow: 0 3px 6px 0 rgba(129, 127, 127, 0.5);
 }
 /* special case for ROOT */
 .favorito {
   flex-direction: column;
-  border-color: black;
+  /*border-color: black;*/
 }
 /**************************************************************/
 /* FIRST-LEVEL DESCENDANT */
 .ArtigoIndividual > img {
-  height: 100px;
+  /*display: none;*/
+  width: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  opacity: 0.15;
+
+  /*transform-style: flat;*/
+  /*transition-property: opacity;*/
+  /*transition-duration: 1s;*/
+  /*transition-timing-function: ease-in-out;*/
 }
 .ArtigoIndividual:not(.favorito) > img {
-  margin-right: 0.5em;
+  /*margin-right: 0.5em;*/
+  position: initial;
+  display: none;
 }
 /**************************************************************/
 /* FIRST-LEVEL DESCENDANT */
@@ -41,6 +56,10 @@
   width: 100%;
   min-width: 0;
   color: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 /**************************************************************/
 .titulo {
@@ -48,33 +67,41 @@
   word-break: break-word;
   overflow: hidden;
   display: -webkit-box;
-  line-clamp: 3;
-  -webkit-line-clamp: 3;
+  /*line-clamp: 3;*/
+  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
+  min-height: 100px;
 }
 .ArtigoIndividual:not(.favorito) .titulo {
-  font-size: 1em;
+  /*font-size: 1em;*/
 }
 /**************************************************************/
 .rodape {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  /*display: flex;*/
+  /*flex-wrap: wrap;*/
+  /*justify-content: space-between;*/
 }
 /**************************************************************/
 .span-fingindo-ser-link {
-  font-style: italic;
-  color: dodgerblue;
+  /*font-style: italic;*/
+  /*color: dodgerblue;*/
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  /*text-align: center;*/
 }
 .data {
   font-size: 0.8em;
+  /*color: gray;*/
+  text-align: end;
+  text-decoration: underline;
+  margin-bottom: 1em;
 }
 
 .categoria {
-  font-size: 0.8em;
+  font-weight: 500;
+  margin: 0.5em 0;
+  /*text-align: center;*/
 }
 @media screen and (max-width: 800px) {
   .ArtigoIndividual:not(.favorito) img {

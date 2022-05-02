@@ -2,7 +2,7 @@ import React from "react";
 import { Artigo } from "./Blog";
 import "./ArtigoIndividual.css";
 
-export const ArtigoIndividual = ({ artigo }: { artigo: Artigo }) => {
+export const ArtigoIndividual = ({ artigo, numeroAtual }: { artigo: Artigo, numeroAtual: number }) => {
   return (
     <article
       className={`ArtigoIndividual ${
@@ -19,17 +19,18 @@ export const ArtigoIndividual = ({ artigo }: { artigo: Artigo }) => {
         target={"_blank"}
         rel="noreferrer"
       >
-        <h3 className={"titulo"}>{artigo.post_title}</h3>
+        <div className={"data"}>
+          ✎{new Date(Date.parse(artigo.post_timestamp)).toLocaleString(
+              "pt-br", {dateStyle: "full"}
+          )} :: №{numeroAtual}
+        </div>
+        <h3 className={"titulo"}>⫸{artigo.post_title}</h3>
         <section className={"rodape"}>
-          <span className={"span-fingindo-ser-link"}>
-            {artigo.post_body.slice(8).slice(0, 42)}...
-          </span>
-          <span className={"data"}>
-            {new Date(Date.parse(artigo.post_timestamp)).toLocaleString(
-              "pt-br"
-            )}
-          </span>
-          <span className={"categoria"}>[{artigo.post_category}]</span>
+
+          <div className={"categoria"}>Categorias: {artigo.post_category}</div>
+          <div className={"span-fingindo-ser-link"}>
+            Fonte: →︎{artigo.post_body.slice(8).slice(0, 42)}...
+          </div>
         </section>
       </a>
     </article>
