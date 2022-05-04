@@ -32,7 +32,7 @@
 /**************************************************************/
 /* FIRST-LEVEL DESCENDANT */
 .ArtigoIndividual > img {
-  /*display: none;*/
+  z-index: 1;
   width: 100%;
   position: absolute;
   right: 0;
@@ -52,6 +52,7 @@
 /**************************************************************/
 /* FIRST-LEVEL DESCENDANT */
 .corpo-do-artigo {
+  z-index: 2;
   width: 100%;
   min-width: 0;
   display: flex;

@@ -16,6 +16,7 @@ export const ArtigoIndividual = ({
       }`}
     >
       <img
+        className={"imagem-artigo"}
         src={"https://codein.ca/_next/image?url=%2Fcodein-logo.png&w=1080&q=75"}
         alt={artigo.post_image}
       />
