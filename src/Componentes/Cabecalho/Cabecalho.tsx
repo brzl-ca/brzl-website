@@ -3,7 +3,6 @@ import "./Cabecalho.css";
 import { LinksNavegacao } from "../LinksNavegacao/LinksNavegacao";
 import { Link, useLocation } from "react-router-dom";
 import ROUTES from "../../Paginas/routes";
-import { isDev } from "../../Paginas/devUtils";
 
 const Cabecalho = () => {
   const { pathname } = useLocation();
