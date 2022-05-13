@@ -1,0 +1,14 @@
+.ContainerCentral-Dev {
+  /*border: 5px solid deepskyblue;*/
+  /*background-color: rgba(0, 191, 255, 0.5);*/
+}
+
+.ContainerCentral {
+  /*  Flex (as child)*/
+  flex: 1;
+  /*  Flex (as parent)*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
