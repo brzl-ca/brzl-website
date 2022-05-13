@@ -3,13 +3,12 @@ import "./Rodape.css";
 import { Link, useLocation } from "react-router-dom";
 import { LinksNavegacao } from "../LinksNavegacao/LinksNavegacao";
 import ROUTES from "../../Paginas/routes";
-import { isDev } from "../../Paginas/devUtils";
+// import { isDev } from "../../Paginas/devUtils";
 
 const Rodape = () => {
   const { pathname } = useLocation();
   return (
-    <section className={isDev() ? "Rodape" : ""}>
-      {/*{isDev() && <h2>Rodape</h2>}*/}
+    <section className={"Rodape"}>
       <LinksNavegacao>
         <Link
           to={ROUTES.PAGINA_INITIAL}
