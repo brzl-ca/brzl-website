@@ -9,7 +9,7 @@ const Cabecalho = () => {
   const { pathname } = useLocation();
 
   return (
-    <section className={isDev() ? "Cabecalho" : ""}>
+    <section className={"Cabecalho"}>
       {/*{isDev() && <h2>Cabecalho</h2>}*/}
       <LinksNavegacao>
         <Link
