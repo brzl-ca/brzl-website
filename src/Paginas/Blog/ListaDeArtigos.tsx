@@ -6,7 +6,7 @@ import { Artigo } from "./Blog";
 
 export const ListaDeArtigos = () => {
   const [{ data }] = useDataApi(
-    process.env.REACT_APP_API_URL ?? "https://api.w-b.dev/blog/",
+    "https://api.w-b.dev/blog/",
     []
   );
   const [categorias, setCategorias] = useState<string[]>([]);
