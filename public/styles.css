@@ -150,7 +150,7 @@ html, body {
     /*    margin-top: 0;*/
     /*}*/
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
     .hero-actions {
         /*border: 5px solid black;*/
         flex-direction: column;
