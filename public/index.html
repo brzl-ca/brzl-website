@@ -5,7 +5,11 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-SLSJXQKXJH"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
         gtag('js', new Date());
 
         gtag('config', 'G-SLSJXQKXJH');
@@ -13,22 +17,69 @@
     <meta charset="UTF-8">
     <title>⁉</title>
     <script src="script.js"></script>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+    <link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+    <link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+    <link href="/site.webmanifest" rel="manifest">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;700&display=swap" rel="stylesheet">
 </head>
 <body class="body">
-<!--add a few headline paragraphs with newsletter style -->
-<div class="headline">👋🏾 Hi!</div>
-<hr>
-<div class="headline">🕵 You've found me.</div>
-<hr>
-<div class="headline">✅ Now what⁉️</div>
-<a href="https://linkedin.com/in/brasileiro" class="cta" onclick="foo()">Say hello 👋🏾</a>
+<section class="blurred"></section>
+<main class="sticky-container">
+    <!--add a few headline paragraphs with newsletter style -->
+    <header class="hero-actions">
+        <a class="cta" href="https://paypal.me/w3b3" onclick="foo()" target="_blank">Want to <span
+                class="gradient-text">buy</span> me a cup of coffe?</a>
+        <a class="cta" href="https://linkedin.com/in/brasileiro" onclick="foo()" target="_blank">Say hello 👋🏾 <span
+                class="gradient-text">via LinkedIn or Whatsapp</span></a>
+        <a class="cta" href="https://calendly.com/-00" onclick="foo()" target="_blank">Wanna chat? Book a <span
+                class="gradient-text">time</span></a>
+    </header>
+<!--    <picture>-->
+<!--        <source srcset="image.webp" type="image/webp">-->
+<!--        <source srcset="image.jpg" type="image/jpeg">-->
+<!--        <img alt="Description of the image" loading="lazy"-->
+<!--             sizes="(max-width: 600px) 100vw, 50vw"-->
+<!--             src="image.jpg" srcset="medium.jpg 1000w, large.jpg 2000w">-->
+<!--    </picture>-->
+    <footer style="text-align: center">
+        <span style="font-size: 12px">🍁</span><span class="gradient-text" style="font-size: 12px">Made in Canada</span><span style="font-size: 12px">🇨🇦</span>
+<!--        <button class="modern-button">Foo</button>-->
+<!--        <button class="modern-button">Foo</button>-->
+<!--        <button class="modern-button">Foo</button>-->
+<!--        <button class="modern-button">Foo</button>-->
+<!--        <button class="modern-button">Foo</button>-->
+<!--        <button class="modern-button">Foo</button>-->
+<!--        <button class="modern-button">Foo</button>-->
+<!--        <button class="modern-button">Foo</button>-->
+<!--        <button class="modern-button">Foo</button>-->
+<!--        <button class="modern-button">Foo</button>-->
+<!--        <button class="modern-button">Foo</button>-->
+<!--        <button class="modern-button">Foo</button>-->
+<!--        <button class="modern-button">Foo</button>-->
+<!--        <button class="modern-button">Foo</button>-->
+<!--        <button class="modern-button">Foo</button>-->
+<!--        <button class="modern-button">Foo</button>-->
+<!--        <button class="modern-button">Foo</button>-->
+<!--        <button class="modern-button">Foo</button>-->
+<!--        <button class="modern-button">Foo</button>-->
+<!--        <button class="modern-button">Foo</button>-->
+<!--        <button class="modern-button">Foo</button>-->
+<!--        <button class="modern-button">Foo</button>-->
+<!--        <button class="modern-button">Foo</button>-->
+<!--        <button class="modern-button">Foo</button>-->
+<!--        <button class="modern-button">Foo</button>-->
+<!--        <button class="modern-button">Foo</button>-->
+<!--        <button class="modern-button">Foo</button>-->
+<!--        <button class="modern-button">Foo</button>-->
+<!--        <button class="modern-button">Foo</button>-->
+<!--        <button class="modern-button">Foo</button>-->
+<!--        <button class="modern-button">Foo</button>-->
+<!--        <button class="modern-button">Foo</button>-->
+    </footer>
+</main>
 </body>
 </html>
